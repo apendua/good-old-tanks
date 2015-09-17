@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/apendua/good-old-tanks/issues"
   },
-  "homepage": "https://github.com/apendua/good-old-tanks#readme"
+  "homepage": "https://github.com/apendua/good-old-tanks#readme",
+  "dependencies": {
+    "lodash": "^3.10.1",
+    "lyric-node": "^0.1.0",
+    "sylvester": "0.0.21"
+  }
 }
