@@ -3,6 +3,7 @@ var _ = require('lodash');
 var v = require('vector');
 
 exports.hitPoint = function (landscape, trajectory, offset) {
+    var altitude = 0;
     var a = null;
     var v = null;
     var h = null;
@@ -17,7 +18,9 @@ exports.hitPoint = function (landscape, trajectory, offset) {
         v = v2;
         h = r;
         
-        if (t.index(v.add(r, offset), landscape) === 1) {
+        altitude = exports.altitude(landscape, r.x);
+        
+        if (r.y < altitude) {
             hitPoint = r;
         }
         return !!hitPoint;
@@ -32,7 +35,10 @@ exports.hitPoint = function (landscape, trajectory, offset) {
     while (!hitPoint && counter < 1000) {
         v += a;
         h += v;
-        if (t.index(v.add(h, offset), landscape) === 1) {
+        
+        altitude = exports.altitude(landscape, h.x);
+        
+        if (h.y < altitude) {
             hitPoint = h;
         }
         counter += 1;
