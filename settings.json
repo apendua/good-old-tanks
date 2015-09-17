@@ -1,4 +1,6 @@
 {
-    "apiUrl": "http://10.12.202.141:9999",
-    "secret": "NobleChartreuseEmuJellyfish"
+    "apiUrl": "http://10.12.202.144:9999",
+    "secret": "NobleChartreuseEmuJellyfish",
+    "username": "DROP TABLE",
+    "tournament": "sandbox-5"
 }
