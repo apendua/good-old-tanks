@@ -1,0 +1,19 @@
+{
+  "name": "good-old-tanks",
+  "version": "0.0.0",
+  "description": "good old tanks",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/apendua/good-old-tanks.git"
+  },
+  "author": "apendua",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/apendua/good-old-tanks/issues"
+  },
+  "homepage": "https://github.com/apendua/good-old-tanks#readme"
+}
